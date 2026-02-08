@@ -127,3 +127,27 @@ if (contactForm) {
         }
     });
 }
+
+// Mobile Menu Toggle
+const mobileToggle = document.querySelector('.mobile-toggle');
+const navLinksContainer = document.querySelector('.nav-links');
+
+if (mobileToggle && navLinksContainer) {
+    mobileToggle.addEventListener('click', () => {
+        navLinksContainer.classList.toggle('active');
+        const icon = mobileToggle.querySelector('i');
+        icon.classList.toggle('fa-bars');
+        icon.classList.toggle('fa-xmark');
+    });
+
+    // Close menu when a link is clicked
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinksContainer.classList.remove('active');
+            const icon = mobileToggle.querySelector('i');
+            icon.classList.add('fa-bars');
+            icon.classList.remove('fa-xmark');
+        });
+    });
+}
+
