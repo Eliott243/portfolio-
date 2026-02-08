@@ -11,6 +11,10 @@
   --transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
+.mobile-nav-actions {
+  display: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -266,13 +270,21 @@ textarea:focus {
 }
 
 @media (max-width: 768px) {
+  header {
+    height: 70px;
+  }
+
   section {
-    padding: 80px 0;
+    padding: 60px 0;
   }
 
   .section-title {
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
+    font-size: 2.2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .logo {
+    font-size: 1.4rem;
   }
 
   /* Mobile Menu */
@@ -282,26 +294,36 @@ textarea:focus {
 
   .nav-links {
     position: fixed;
-    top: 100px;
+    top: 70px;
+    /* Matching new header height */
     left: -100%;
     width: 100%;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 70px);
     background: var(--bg-cream);
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2.5rem;
+    gap: 2rem;
     transition: var(--transition);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    padding-bottom: 2rem;
   }
 
   .nav-links.active {
     left: 0;
   }
 
+  /* Move actions into the menu drawer for mobile */
   .nav-actions {
     display: none;
-    /* Hide actions on mobile nav bar or move to bottom of links */
+  }
+
+  .nav-links.active+.nav-actions,
+  .nav-links.active .mobile-nav-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1rem;
   }
 
   /* Hero Mobile */
