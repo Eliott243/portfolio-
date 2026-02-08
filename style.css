@@ -162,11 +162,34 @@ section {
 }
 
 /* Cozy Cards */
-.skills-grid,
-.projects-grid {
+.skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 3rem;
+}
+
+.projects-grid {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  gap: 2rem;
+  padding: 1rem 0 3rem 0;
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-terracotta) transparent;
+}
+
+.projects-grid::-webkit-scrollbar {
+  height: 6px;
+}
+
+.projects-grid::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.projects-grid::-webkit-scrollbar-thumb {
+  background-color: var(--accent-terracotta);
+  border-radius: 10px;
 }
 
 .skill-card,
@@ -178,6 +201,12 @@ section {
   transition: var(--transition);
   border: 1px solid rgba(93, 64, 55, 0.05);
 }
+
+.project-card {
+  flex: 0 0 350px;
+  scroll-snap-align: start;
+}
+
 
 .skill-card:hover,
 .project-card:hover {
