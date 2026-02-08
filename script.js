@@ -90,13 +90,19 @@ if (contactForm) {
         btn.textContent = loadingText;
         btn.disabled = true;
 
+        // Honeypot check
+        if (contactForm._gotcha.value) {
+            console.log("Spam detected!");
+            return;
+        }
+
         // Frontend Sanitization
         const sanitize = (text) => text.replace(/<[^>]*>?/gm, ''); // Strips all HTML tags
 
         const formData = new FormData();
-        formData.append('name', sanitize(contactForm.name.value));
-        formData.append('email', sanitize(contactForm.email.value));
-        formData.append('message', sanitize(contactForm.message.value));
+        formData.append('name', sanitize(contactForm.name.value.trim()));
+        formData.append('email', sanitize(contactForm.email.value.trim()));
+        formData.append('message', sanitize(contactForm.message.value.trim()));
 
         try {
             const response = await fetch(contactForm.action, {
