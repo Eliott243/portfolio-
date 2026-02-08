@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Default to English -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-en="Data Analysis | Human & Precise Approach" data-fr="Analyse de Données | Approche Humaine & Précise">
+        Data Analysis | Human & Precise Approach</title>
+
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://unpkg.com; font-src 'self' https://fonts.gstatic.com https://unpkg.com; img-src 'self' data:; connect-src 'self' https://formspree.io;">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <meta name="description" content="Data Analyst Portfolio - SQL, Python, Visualization.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lora:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome (Using SRI for security) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+        integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"
+                style="font-family: 'Playfair Display', serif; font-weight: 700; color: var(--primary-brown);">
+                <span data-en="The Art of " data-fr="L'Art des ">The Art of </span><span
+                    style="color: var(--accent-terracotta);" data-en="Data." data-fr="Données.">Data.</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" data-en="Home" data-fr="Accueil">Home</a></li>
+                <li><a href="#skills" data-en="Expertise" data-fr="Savoir-faire">Expertise</a></li>
+                <li><a href="#projects" data-en="Projects" data-fr="Projets">Projects</a></li>
+                <li><a href="#experience" data-en="Experience" data-fr="Parcours">Experience</a></li>
+                <li><a href="#contact" data-en="Contact" data-fr="Contact">Contact</a></li>
+            </ul>
+            <div style="display: flex; align-items: center; gap: 1.5rem;">
+                <!-- Language Switcher -->
+                <button id="lang-switch" class="btn-outline"
+                    style="padding: 0.5rem 1rem; font-size: 0.8rem; border: 1px solid var(--primary-brown); border-radius: 20px; background: transparent; color: var(--primary-brown); cursor: pointer; font-family: 'Inter', sans-serif; font-weight: 600;">EN
+                    / FR</button>
+                <a href="cv/cv katende.docx" class="btn" style="padding: 0.8rem 2rem; font-size: 0.9rem;"
+                    data-en="My CV" data-fr="Mon CV" download>My CV</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1 data-en="Telling stories through <span style='color: var(--accent-terracotta); font-style: italic;'>numbers.</span>"
+                        data-fr="Raconter des histoires à travers les <span style='color: var(--accent-terracotta); font-style: italic;'>chiffres.</span>">
+                        Telling stories through <span
+                            style="color: var(--accent-terracotta); font-style: italic;">numbers.</span></h1>
+                    <p data-en="Computer Engineering graduate specialized in Data Analytics and BI. I give meaning to your complex data with a rigorous analytical approach using Python, SQL, and Power BI."
+                        data-fr="Diplômé en Génie Informatique spécialisé en Analyse de Données et BI. Je donne du sens à vos données complexes avec une approche analytique rigoureuse utilisant Python, SQL et Power BI.">
+                        Computer Engineering graduate specialized in Data Analytics and BI. I give meaning to your
+                        complex data with a rigorous analytical approach using Python, SQL, and Power BI.</p>
+                    <a href="#projects" class="btn" data-en="Discover my work" data-fr="Découvrir mes travaux">Discover
+                        my work</a>
+                </div>
+                <div class="hero-img">
+                    <img src="portrait.jpg" alt="Passionate Data Analyst at his workstation">
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" style="background-color: var(--bg-beige);">
+            <div class="container">
+                <h2 class="section-title" data-en="Technical Expertise" data-fr="Expertise Technique">Technical
+                    Expertise</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fas fa-layer-group"></i>
+                        <h3 data-en="SQL Architecture" data-fr="Architecture SQL">SQL Architecture</h3>
+                        <p data-en="Meticulous extraction, structuring, and cleaning of your databases."
+                            data-fr="Extraction, structuration et nettoyage méticuleux de vos bases de données.">
+                            Meticulous extraction, structuring, and cleaning of your databases.</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-code"></i>
+                        <h3 data-en="Python Analysis" data-fr="Analyse Python">Python Analysis</h3>
+                        <p data-en="Statistical modeling and automation of your daily workflows."
+                            data-fr="Modélisation statistique et automatisation de vos flux de travail quotidiens.">
+                            Statistical modeling and automation of your daily workflows.</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-chart-pie"></i>
+                        <h3 data-en="Business Intelligence" data-fr="Business Intelligence">Business Intelligence</h3>
+                        <p data-en="Creating interactive Power BI dashboards and KPI reporting for decision support."
+                            data-fr="Création de tableaux de bord Power BI interactifs et reporting KPI pour l'aide à la décision.">
+                            Creating interactive Power BI dashboards and KPI reporting for decision support.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <div class="container">
+                <h2 class="section-title" data-en="Case Studies" data-fr="Études de Cas">Case Studies</h2>
+                <div class="projects-grid">
+                    <div class="project-card" style="padding: 0; overflow: hidden;">
+                        <img src="project1.png" alt="Enterprise Sales Analytics"
+                            style="width: 100%; border-radius: 40px 40px 0 0;">
+                        <div style="padding: 3rem;">
+                            <span
+                                style="color: var(--accent-terracotta); font-weight: 600; font-size: 0.9rem; letter-spacing: 1px; text-transform: uppercase;"
+                                data-en="Enterprise Analytics" data-fr="Analytique Entreprise">Enterprise
+                                Analytics</span>
+                            <h3 style="margin: 1rem 0;" data-en="Sales Pipeline (ETL)"
+                                data-fr="Pipeline de Ventes (ETL)">
+                                Sales Pipeline (ETL)</h3>
+                            <p data-en="End-to-end pipeline (ETL) to process and model retail sales data using SQL and Python."
+                                data-fr="Pipeline de bout en bout (ETL) pour traiter et modéliser les données de ventes retail avec SQL et Python.">
+                                End-to-end pipeline (ETL) to process and model retail sales data using SQL and Python.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="project-card" style="padding: 0; overflow: hidden;">
+                        <img src="project2.png" alt="Customer Churn Analysis"
+                            style="width: 100%; border-radius: 40px 40px 0 0;">
+                        <div style="padding: 3rem;">
+                            <span
+                                style="color: var(--accent-terracotta); font-weight: 600; font-size: 0.9rem; letter-spacing: 1px; text-transform: uppercase;"
+                                data-en="Customer Insights" data-fr="Insights Client">Customer Insights</span>
+                            <h3 style="margin: 1rem 0;" data-en="Churn Analysis" data-fr="Analyse du Churn">Churn
+                                Analysis</h3>
+                            <p data-en="Identification of key churn drivers using Power BI and statistical segmentation."
+                                data-fr="Identification des principaux facteurs de désabonnement via Power BI et segmentation statistique.">
+                                Identification of key churn drivers using Power BI and statistical segmentation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" style="background-color: var(--bg-beige);">
+            <div class="container">
+                <h2 class="section-title" data-en="Experience & Education" data-fr="Expérience & Études">Experience &
+                    Education</h2>
+                <div style="max-width: 800px; margin: 0 auto;">
+                    <div class="timeline-item">
+                        <h3 data-en="Google Data Analytics Certificate" data-fr="Certificat Google Data Analytics">
+                            Google Data Analytics Certificate</h3>
+                        <p data-en="Professional certification in progress: SQL, R, and data-driven decision making."
+                            data-fr="Certification professionnelle en cours : SQL, R et prise de décision basée sur les données.">
+                            Professional certification in progress: SQL, R and data-driven decision making.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3 data-en="Junior AI Developer" data-fr="Développeur IA Junior">Junior AI Developer</h3>
+                        <p data-en="Developed AcadCheck, an AI-powered plagiarism detection system at Near East University."
+                            data-fr="Développement de AcadCheck, un système de détection de plagiat par IA à la Near East University.">
+                            Developed AcadCheck, an AI-powered plagiarism detection system at Near East University.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3 data-en="B.S. Computer Engineering" data-fr="B.S. Génie Informatique">B.S. Computer
+                            Engineering</h3>
+                        <p data-en="Girne American University — Specialized in Data Structures, Databases, and ML."
+                            data-fr="Girne American University — Spécialisé en Structures de Données, Bases de Données et ML.">
+                            Girne American University — Specialized in Data Structures, Databases and ML.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <h2 class="section-title" data-en="Let's Work Together" data-fr="Travaillons Ensemble">Let's Work
+                    Together</h2>
+                <div style="max-width: 600px; margin: 0 auto; text-align: center;">
+                    <p style="margin-bottom: 3.5rem; font-size: 1.2rem;"
+                        data-en="Have a project in mind? I'd be delighted to discuss it over a coffee (virtual or real)."
+                        data-fr="Un projet en tête ? Je serais ravi d'en discuter autour d'un café (virtuel ou réel).">
+                        Have a project in mind? I'd be delighted to discuss it over a coffee (virtual or real).</p>
+                    <form id="contact-form" action="https://formspree.io/f/mzdvnjrn" method="POST"
+                        style="text-align: left;">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                            <input type="text" name="name" placeholder="Your name" data-placeholder-en="Your name"
+                                data-placeholder-fr="Votre nom" required>
+                            <input type="email" name="email" placeholder="Your email" data-placeholder-en="Your email"
+                                data-placeholder-fr="Votre email" required>
+                        </div>
+                        <textarea name="message" placeholder="Tell me about your project..." rows="6"
+                            data-placeholder-en="Tell me about your project..."
+                            data-placeholder-fr="Parlez-moi de votre projet..." required></textarea>
+                        <button type="submit" class="btn" style="width: 100%;" data-en="Send my message"
+                            data-fr="Envoyer mon message">Send my message</button>
+                    </form>
+                    <div style="margin-top: 5rem; display: flex; justify-content: center; gap: 3rem;">
+                        <a href="https://www.linkedin.com/in/elie-katende-583659329?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                            target="_blank" rel="noopener noreferrer"
+                            style="color: var(--primary-brown); font-size: 1.8rem;"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Eliott243" target="_blank" rel="noopener noreferrer"
+                            style="color: var(--primary-brown); font-size: 1.8rem;"><i class="fab fa-github"></i></a>
+                        <a href="https://x.com/kaitokoder?s=11" target="_blank" rel="noopener noreferrer"
+                            style="color: var(--primary-brown); font-size: 1.8rem;"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer style="padding: 6rem 0; border-top: 1px solid rgba(93, 64, 55, 0.05); text-align: center;">
+        <div class="container">
+            <p style="color: var(--text-soft); font-size: 0.9rem;"
+                data-en="&copy; 2026 Data Analyst Portfolio. Created with passion and care."
+                data-fr="&copy; 2026 Portfolio Data Analyst. Créé avec passion et soin.">&copy; 2026 Data Analyst
+                Portfolio. Created with passion and care.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,5 @@
+﻿node_modules/
+.DS_Store
+*.txt
+extract_docx.py
+cv_tmp/
